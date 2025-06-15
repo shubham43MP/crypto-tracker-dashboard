@@ -13,16 +13,15 @@ Ensure the following tools are installed:
 * ✅ [Node.js](https://nodejs.org/)
 * ✅ [Yarn](https://classic.yarnpkg.com/lang/en/)
 
-### 🧪 Development Environment Used
+## 🚀 Technology Stack
 
-| Tool    | Version     |
-| ------- | ----------- |
-| Node.js | `v22.15.1`  |
-| NPM     | `v10.9.2`   |
-| Yarn    | `v1.22.22`  |
-| OS      | `Ubuntu 24` |
+This project is built using the following modern web technologies:
 
----
+* ⚛️ **React** – Component-based UI development
+* ⚡ **Vite** – Fast, modern build tool and dev server
+* 🎨 **Tailwind CSS v4** – Utility-first styling with dark mode support
+* 🧠 **TypeScript** – Static typing for scalable React code
+* 📈 **React Highcharts** – For rendering dynamic and interactive price charts
 
 ## 🛠️ Getting Started
 
@@ -90,5 +89,16 @@ yarn dev
 
 * 🧭 **Advanced Dashboard Views**
   Toggleable layouts (e.g., list/grid), richer visual metrics
+
+---
+
+### 🧪 Development Environment Used
+
+| Tool    | Version     |
+| ------- | ----------- |
+| Node.js | `v22.15.1`  |
+| NPM     | `v10.9.2`   |
+| Yarn    | `v1.22.22`  |
+| OS      | `Ubuntu 24` |
 
 ---

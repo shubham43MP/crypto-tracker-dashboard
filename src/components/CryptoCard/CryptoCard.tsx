@@ -44,7 +44,6 @@ export const CryptoCard = ({
                  sm:w-full h-full w-3/4 mx-auto
                  transition-transform hover:scale-[1.02] hover:shadow-xl"
     >
-      {/* Favorite Button */}
       <button
         onClick={handleFavouriteClick}
         className="absolute top-4 right-4 z-10"
@@ -56,8 +55,6 @@ export const CryptoCard = ({
           <HeartIcon className="w-6 h-6 text-gray-400 hover:text-red-500" />
         )}
       </button>
-
-      {/* Header */}
       <div className="flex items-center gap-5 mb-6">
         <img
           src={image}
@@ -71,8 +68,6 @@ export const CryptoCard = ({
           </p>
         </div>
       </div>
-
-      {/* Stats */}
       <div className="space-y-4 text-base">
         {[
           {
