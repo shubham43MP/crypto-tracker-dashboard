@@ -1,3 +1,4 @@
+import { coinApi } from "apis/getCoinApis";
 import { useEffect, useState } from "react";
 
 export type Coin = {
@@ -12,21 +13,19 @@ export type Coin = {
 
 export const useCoins = () => {
   const [coins, setCoins] = useState<Coin[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchCoins = async () => {
+      setLoading(true);
       try {
-        const res = await fetch(
-          "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
-        );
-        const data = await res.json();
-        setCoins(data.slice(0, 50));
+        const res = await coinApi.getAllCoins()
+        const coinData = res.data;
+        setCoins(coinData.slice(0, 50));
       } catch (error) {
         console.error("Error fetching coin data:", error);
-      } finally {
-        setLoading(false);
       }
+      setLoading(false);
     };
 
     fetchCoins();

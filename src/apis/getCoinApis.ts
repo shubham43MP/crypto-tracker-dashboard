@@ -32,5 +32,10 @@ export const coinApi = {
     return axios.get(
       `${BASE_COIN_GECKO_URL}/v3/coins/${id}/market_chart?vs_currency=usd&days=${days}`
     );
+  },
+  getAllCoins: () => {
+    return axios.get(
+      `${BASE_COIN_GECKO_URL}/v3/coins/markets?vs_currency=usd`
+    );
   }
 }

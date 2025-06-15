@@ -2,7 +2,7 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { useParams } from "react-router-dom";
 import { Spinner } from "components/Spinner/";
-import { durationMap, useCoinDetail } from "hooks/useCoinDetail";
+import { durationMap, useCoinDetail } from "pages/CoinDetails/useCoinDetail";
 import { formatCompactNumber } from "utils/formatCompactNumber";
 import { CoinHeader } from "./CoinHeader";
 import { DetailRectangles } from "./DetailRectangles";
