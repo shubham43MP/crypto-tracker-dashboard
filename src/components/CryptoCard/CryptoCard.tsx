@@ -1,6 +1,7 @@
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartIconSolid } from "@heroicons/react/24/solid";
 import { useCallback } from "react";
+import { formatCompactNumber, formatNumberShort } from "utils/formatCompactNumber";
 
 type CryptoCardProps = {
   coinId: string;
@@ -82,7 +83,7 @@ export const CryptoCard = ({
           },
           {
             label: "Market Cap",
-            value: `$${marketCap.toLocaleString()}`,
+            value: `$${formatCompactNumber(marketCap)}`,
           },
         ].map(({ label, value, badge, isPositive }) => (
           <div className="flex justify-between items-center" key={label}>
