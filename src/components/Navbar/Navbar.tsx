@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   BellIcon,
   MagnifyingGlassIcon,
@@ -7,7 +8,6 @@ import {
 } from "@heroicons/react/24/outline";
 import { useTheme } from "hooks/useTheme";
 import { useSearch } from "hooks/useSearch";
-import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
