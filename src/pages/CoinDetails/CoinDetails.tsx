@@ -49,7 +49,7 @@ export const CoinDetails = () => {
               id={id}
             />
             <div
-              className="prose max-w-none text-black dark:text-gray-200 text-sm max-h-48 overflow-y-auto"
+              className="prose max-w-none text-black dark:text-gray-200 text-sm overflow-y-auto"
               dangerouslySetInnerHTML={{
                 __html: coinDetails.description.en || "",
               }}
