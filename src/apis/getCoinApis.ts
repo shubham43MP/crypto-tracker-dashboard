@@ -1,4 +1,5 @@
 import axios from "axios";
+import { BASE_COIN_GECKO_URL } from "utils/constants";
 
 export type coinDetailsResponse = {
   image: {
@@ -23,13 +24,13 @@ export type coinDetailsResponse = {
 export const coinApi = {
   getCoinDetail: (id: string) => {
     return axios.get<coinDetailsResponse>(
-        `https://api.coingecko.com/api/v3/coins/${id}`
+        `${BASE_COIN_GECKO_URL}/v3/coins/${id}`
       )
   },
 
   getCoins: (id: string, days: string) => {
     return axios.get(
-      `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&days=${days}`
+      `${BASE_COIN_GECKO_URL}/v3/coins/${id}/market_chart?vs_currency=usd&days=${days}`
     );
   }
 }
