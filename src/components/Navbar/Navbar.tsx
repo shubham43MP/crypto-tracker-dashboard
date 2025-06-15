@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="hidden sm:flex items-center gap-2 text-lg font-semibold">
         <Link to="/">
           <img
-            src="/public/bitcoin-btc-logo.png"
+            src="/bitcoin-btc-logo.png"
             alt="logo"
             className="size-10"
           />
