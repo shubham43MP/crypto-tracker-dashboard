@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { useTheme } from "hooks/useTheme";
 import { useSearch } from "hooks/useSearch";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -15,11 +16,13 @@ export const Navbar = () => {
   return (
     <nav className="w-full bg-white dark:bg-gray-950 text-black dark:text-white py-4 px-6 flex items-center justify-between shadow-md transition-colors">
       <div className="hidden sm:flex items-center gap-2 text-lg font-semibold">
-        <img
-          src="/public/bitcoin-btc-logo.png"
-          alt="logo"
-          className="size-10"
-        />
+        <Link to="/">
+          <img
+            src="/public/bitcoin-btc-logo.png"
+            alt="logo"
+            className="size-10"
+          />
+        </Link>
       </div>
 
       <div className="flex items-center gap-2 sm:gap-4 flex-1 mx-4 justify-center max-w-lg">
