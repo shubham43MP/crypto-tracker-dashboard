@@ -11,7 +11,7 @@ A responsive, theme-enabled cryptocurrency dashboard built with **Vite + React +
 Ensure the following tools are installed:
 
 * ✅ [Node.js](https://nodejs.org/)
-* ✅ [Yarn](https://classic.yarnpkg.com/lang/en/)
+* ✅ [PNPM](https://pnpm.io/)
 
 ## 🚀 Technology Stack
 
@@ -40,13 +40,13 @@ cd crypto-trakcer-dash
 ### 3️⃣ Install Dependencies
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ### 4️⃣ Start the Development Server
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 > 🔗 App runs on: `http://localhost:5173`
@@ -98,7 +98,7 @@ yarn dev
 | ------- | ----------- |
 | Node.js | `v22.15.1`  |
 | NPM     | `v10.9.2`   |
-| Yarn    | `v1.22.22`  |
+| PNPM    | `v10.12.4`  |
 | OS      | `Ubuntu 24` |
 
 ---
